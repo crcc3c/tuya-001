@@ -63,7 +63,8 @@ Wi-Fi 和蓝牙连通性
 
 3.1、电路板设计
 ##
-
+比如原理图的设计：
+https://github.com/crcc3c/tuya-001/blob/main/SCH.png
 3.2、电路板3D
 ##
 
