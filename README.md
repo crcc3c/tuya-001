@@ -42,7 +42,20 @@ Wi-Fi 和蓝牙连通性
 电路原理图及PCB设计需要使用到KiCAD这个开源的软件，不涉及破解盒律师函，可以开心的玩耍
 *MUC_SDK需要导入arduino IDE，Arduino的软件可以从官方下载，无论你使用时1.8.*版的还是2.0.*版的，都可以参考<DevelopResourcePack_WS2812B_20210528>文档进行导入。
 
-2.3.1开发资源包中包括5个文件：
+![MCU_SDK使用指导文档链接](https://docs.tuya.com/zh/iot/device-development/access-mode-mcu/wifi-general-solution/software-reference-wifi/overview-of-migrating-tuyas-mcu-sdk?id=K9hhi0xr5vll9)
+2.3.1、根据产品实际情况（重置wifi按钮和wifi状态指示灯处理方式、是否支持MCU升级等）进行配置
+###
+protocol.h内修改此配置
+###
+protocol.h 包含以下信息：MCU 要发送至 Wi-Fi 模块初始化所需的参数。SDK 裁剪所定义的宏。用户可根据需要的功能打开相应的宏定义。protocol.c中的函数声明。
+
+protocol.c包含协议数据体的内容处理函数。您可以根据项目需求，在相应函数内添加代码，获取 Wi-Fi 模块向 MCU 发送的数据。
+
+2.3.2、移植MCU_SDK
+###
+请查看protocol.c文件内的移植步骤,并正确完成移植。移植后，请完成数据下发处理、数据上报部分的代码，即可完成全部wifi功能。
+
+2.3.3开发资源包中包括5个文件：
 ###
 * 根据产品功能自动生成的串口通讯协议
 * MCU SDK
@@ -50,12 +63,13 @@ Wi-Fi 和蓝牙连通性
 * 涂鸦串口调试助手（内含使用说明）
 * 调试文件
 
-2.3.2使用流程
+2.3.4使用流程
 ###
 * 查看产品通讯协议；
 * MCU SDK为根据产品自动生成的控制板MCU程序，在此基础上进行修改和调用，可以快速完成MCU程序；
 * 利用涂鸦提供的串口调试助手来验证MCU程序是否调通。涂鸦串口调试助手作为为模拟涂鸦模块收发指令；
 * 请务必先使用涂鸦串口调试助手调通程序，再将模块连接至控制板上进行App测试。（App下载：应用商店中搜索“涂鸦智能”）。
+
 
 
 3、项目相关的demo照片，App截屏，视频链接
@@ -64,29 +78,32 @@ Wi-Fi 和蓝牙连通性
 3.1、电路板设计
 ##
 比如原理图的设计：
-https://github.com/crcc3c/tuya-001/blob/main/SCH.png
+![SCH](https://github.com/crcc3c/tuya-001/blob/main/SCH.png)
 3.2、电路板3D
 ##
+电路板设计正面视图：
+![正面正视图](https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_F_3D.0.png)
+![正面侧视图1](https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB.png)
+![正面侧视图2](https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB0.png)
+电路板设计底面视图：
+![底面正视图](https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_B_3D.00.png)
+![底面侧视图1](https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_B.png)
+![底面侧视图2](https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_B_3D.0.png)
+![底面侧视图3](https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_B_3D.png)
 
 3.3、电路板实物
 ##
-电路板设计正面视图：
-https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_F_3D.0.png
-https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB.png
-https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB0.png
-电路板设计底面视图：
-https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_B_3D.00.png
-https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_B.png
-https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_B_3D.0.png
-https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_B_3D.png
+目前已采购了元器件，等待都到货了，就可以开始焊接PCB了![]()
+待补充……
 3.4、Arduino调试
 ##
-
+待补充……
 3.5、APP联调
 ##
-
+待补充……
 3.6、视频介绍
 ##
-
+待补充……
 4、项目使用的开源License文件，如MIT
 #
+待补充……
