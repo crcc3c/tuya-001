@@ -4,6 +4,8 @@ This project is developed using Tuya SDK, which enables you to quickly develop b
 
 1项目介绍
 #
+开始我的智能之旅源于【涂鸦智能+Arduino实战营】之涂鸦智能【幻彩灯带】—Arduino SDK 接入实操培训讲解，跟着池老师的讲解和QQ群里大家的讨论，完成了一版又一版的PCB设计。目前还是留有遗憾。也许事对项目的不熟悉以及硬件设计知识的缺乏，涂鸦的文档中心中也没有相关模块的硬件设计举例，小白还是需要多临摹，多参考。
+建议后来的同学，一定先到涂鸦的文档中心，好好看上一边，做到心中有数
 
 2项目使用教程介绍
 #
