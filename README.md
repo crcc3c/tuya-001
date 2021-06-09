@@ -70,7 +70,15 @@ https://github.com/crcc3c/tuya-001/blob/main/SCH.png
 
 3.3、电路板实物
 ##
-
+电路板设计正面视图：
+https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_F_3D.0.png
+https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB.png
+https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB0.png
+电路板设计底面视图：
+https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_B_3D.00.png
+https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_B.png
+https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_B_3D.0.png
+https://github.com/crcc3c/tuya-001/blob/main/WBR3L_W_PCB_B_3D.png
 3.4、Arduino调试
 ##
 
